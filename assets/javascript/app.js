@@ -13,7 +13,7 @@ $(document).ready(function() {
     }
     
     //Hide the questions and other contents
-    $(window).on("load", hide, reset);
+    $(window).on("load", hide);
     
     $('#start').on('click', function(){
         $(this).hide();
