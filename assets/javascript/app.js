@@ -13,10 +13,11 @@ $(document).ready(function() {
     }
     
     //Hide the questions and other contents
-    $(window).on("load", hide);
+    $(window).on("load", hide,);
     
     $('#start').on('click', function(){
         $(this).hide();
+        reset();
         show();
         run();
         
