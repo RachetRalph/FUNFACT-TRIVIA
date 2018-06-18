@@ -13,11 +13,10 @@ $(document).ready(function() {
     }
     
     //Hide the questions and other contents
-    $(window).on("load", hide,);
+    $(window).on("load", hide, reset);
     
     $('#start').on('click', function(){
         $(this).hide();
-        reset();
         show();
         run();
         
@@ -28,6 +27,7 @@ $(document).ready(function() {
         hide();
         rSummary();
         stop();
+        reset();
     });
     
     //Create the elements for the result page
