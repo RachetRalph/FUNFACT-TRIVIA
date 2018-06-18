@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    //resets radio buttons on page reload.
+    $('input[type=radio]').attr('checked',false);
     
     //These are global variables
     var number = 30;
@@ -27,7 +29,7 @@ $(document).ready(function() {
         hide();
         rSummary();
         stop();
-        reset();
+        
     });
     
     //Create the elements for the result page
@@ -78,7 +80,7 @@ $(document).ready(function() {
         $('#done').hide();
     }
     
-    //This function will hide some contents
+    //This function will show some contents
     function show() {
         $('.form-group').show();
         $('#time').show();
